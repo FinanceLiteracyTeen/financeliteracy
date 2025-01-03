@@ -101,7 +101,7 @@
         }
         .video-container {
             width: 100%;
-            max-width: 600px;
+            max-width: 800px; /* Adjusted the max width */
             border: 2px solid white;
             display: flex;
             align-items: center;
@@ -109,9 +109,9 @@
             margin-top: 20px; /* Added space between sections */
             margin-right: 40px;
         }
-        .video-container video {
+        .video-container iframe {
             width: 100%;
-            height: auto;
+            height: 450px; /* Adjusted the height */
         }
     </style>
 </head>
@@ -149,10 +149,7 @@
                 <p>The next topic that needs to be discussed is DOOM spending. DOOM spending is also a negative key concept behind the teenager overspending. DOOM spending is also a negative factor which gives the urge for teens to overspend on their money. It forces them to buy new products which are not needed for their household and leads to debt and loan borrowing from the bank. DOOM spending mainly affects teenagers who find happiness in overspending to soothe the pain of debt and social circle pressure. Their friends tend to force them to purchase expensive products which makes them weak in terms of money handling. The teens cannot hold onto their money properly which leads them to overspend and DOOM spending is the cause for it. To combat DOOM spending, teenagers need to force themselves away from the cycle by breaking it. They should realize the amount of debt being held up in their family and how it negatively impacts their lifestyle.</p>
             </div>
             <div class="video-container">
-                <video controls>
-                    <source src="Interview Personal Project_Itikaas.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <iframe src="https://drive.google.com/file/d/1VAFBN6hNYX1TzYxWIjDZn3lgQd4DgZdx/preview" width="100%" height="450" allow="autoplay"></iframe>
             </div>
         </div>
     </div>
@@ -162,7 +159,7 @@
             if (dropdown.style.display === 'none' || dropdown.style.display === '') {
                 dropdown.style.display = 'block';
             } else {
-                dropdownstyle.display = 'none';
+                dropdown.style.display = 'none';
             }
         });
     </script>
