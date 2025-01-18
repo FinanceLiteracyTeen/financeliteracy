@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="figma.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeFinance - Savings</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: goldenrod;
+            color: white;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        .header .menu {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            position: relative;
+        }
+        .header .menu img {
+            height: 40px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            height: calc(100vh - 60px);
+        }
+        .text {
+            font-size: 48px;
+            text-align: left;
+            flex: 1;
+            margin-right: 20px;
+            margin-left: 60px;
+        }
+        .media-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            flex: 1;
+        }
+        .finance-info {
+            width: 200%;
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 80px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .menu-dropdown {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.441);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .menu-dropdown a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .menu-dropdown img {
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-right: 40px;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-section">
+            <img src="WeFinance logo.png" alt="WeFinance Logo">
+            <div class="logo">WeFinance</div>
+        </div>
+        <div class="menu">
+            <a href="index.html"><img src="Home icon.png" alt="Home"></a>
+            <img src="Menu icon.png" alt="Menu" id="menu-icon">
+            <img src="Finance logo.png" alt="Finance logo" width="50">
+            <div class="menu-dropdown" id="menu-dropdown">
+                <a href="finance.html"><img src="Finance student icon.png" alt="Finance">Finance</a>
+                <a href="budgeting.html"><img src="Budgeting icon.png" alt="Budgeting">Budgeting</a>
+                <a href="feedback.html"><img src="Feedback icon.png" alt="Feedback">Feedback</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="text">Savings</div>
+        <div class="media-section">
+            <div class="finance-info">
+                <h2>Savings</h2>
+                <p>Savings is important to cover our expenses. If we want to develop our understanding of savings in today's world, then we have to understand how to save properly. Try tracking your budgets and cut costs from your expenses.</p>
+                <p>Savings has a few main branches such as:</p>
+                <ul>
+                    <li><strong>Savings program: (Future Retirement accounts)</strong> Set up a savings program so that at least 10 percent of earnings goes directly into their savings account.</li>
+                    <li><strong>Track your spends:</strong> Estimate your monthly expenses and plan accordingly. Aim to save around 30% of your usual spending.</li>
+                    <li><strong>Placing your money in a safe place:</strong> When choosing to open a savings account at a bank or credit union, explain that the interest rate may not be as relevant since the goal is to save enough money to cover emergency expenses.</li>
+                    <li><strong>Overall:</strong> Learn what you can do to keep your money safe and for future expenses</li>
+                </ul>
+                <h3>Video 1: Teen savings programs</h3>
+                <p>Now watch this video on what you can do as a teen and how you can attend savings programs in the future.</p>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GSUYGHh-D5w?si=KUkY2WsoG88_k7_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var dropdown = document.getElementById('menu-dropdown');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

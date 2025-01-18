@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="figma.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeFinance - Financial Literacy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: blue;
+            color: white;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        .header .menu {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            position: relative;
+        }
+        .header .menu img {
+            height: 40px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            height: calc(100vh - 60px);
+        }
+        .text {
+            font-size: 48px;
+            text-align: left;
+            flex: 1;
+            margin-right: 20px;
+            margin-left: 60px;
+        }
+        .media-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+        }
+        .finance-info {
+            width: 100%;
+            max-width: 800px;
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 80px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+            margin-right: 8000px;
+        }
+        .menu-dropdown {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.441);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .menu-dropdown a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .menu-dropdown img {
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        /* Add these styles to align the videos side by side */
+        .video-container-wrapper {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .video-container {
+            width: 48%;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+        }
+        /* Text styling for paragraphs inside finance-info */
+        .finance-info p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .finance-info ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-section">
+            <img src="WeFinance logo.png" alt="WeFinance Logo">
+            <div class="logo">WeFinance</div>
+        </div>
+        <div class="menu">
+            <a href="index.html"><img src="Home icon.png" alt="Home"></a>
+            <img src="Menu icon.png" alt="Menu" id="menu-icon">
+            <img src="Finance logo.png" alt="Finance logo" width="50">
+            <div class="menu-dropdown" id="menu-dropdown">
+                <a href="finance.html"><img src="Finance student icon.png" alt="Finance">Finance</a>
+                <a href="budgeting.html"><img src="Budgeting icon.png" alt="Budgeting">Budgeting</a>
+                <a href="savings.html"><img src="Savings icon.png" alt="Finance">Savings</a>
+                <a href="feedback.html"><img src="Feedback icon.png" alt="Feedback">Feedback</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="text">Financial Literacy</div>
+        <div class="media-section">
+            <div class="finance-info">
+                <h2>Financial Literacy</h2>
+                <p>Financial Literacy today can be identified in many forms. We think financial literacy is bound to our background and it is not meant to be shared with everyone. But financial literacy is the exact opposite. It is meant to be shared with people so that we can expand our knowledge group with our peers.</p>
+                <p>This website will cover the important elements required to learn financial literacy:</p>
+                <ul>
+                    <li><strong>Finance:</strong> Explore what you can learn about financial literacy today.</li>
+                    <li><strong>Budgeting:</strong> Learn how to create and stick to a budget to manage your income and expenses.</li>
+                    <li><strong>Savings:</strong> Understand the importance of saving for emergencies and future goals.</li>
+                    <li><strong>Financial Situation in India:</strong> Understand what the situation of finance in India is currently like.</li>
+                    <li><strong>Actions as a teen:</strong> Learn what you can do as a teen today. (Feedback form)</li> 
+                </ul>
+                <h3>Video 1: Financial Literacy in India</h3>
+                <p>The first video talks about the definition of financial literacy. Once you watch the video, you will get a simple understanding of financial literacy. It also consists of information based on India’s current standing in Financial Literacy and how it stands out as a data chart in terms of finance.</p>
+                <p>Considering India’s population, less than 4% of people choose mutual funds and other commodities, which makes it really difficult for Indians to stand up in the list. Many financial assets are left by Indian households and therefore result in missed opportunities. There are many ways to save your money in today’s world, but India does not attempt that. If you did own bank accounts, you would have an elementary school’s understanding of financial literacy.</p>
+                <p>But learning about the types and uses of those accounts can really increase your understanding of financial literacy.</p>
+
+                <h3>Video 2: Financial Literacy in India</h3>
+                <p>The second video consists of a continuation to the first video about how India could be more efficient in terms of financial literacy and what are some of the barriers that need to be broken in a simple manner.</p>
+                <p>Most people in India possess an elementary level of financial literacy at around 43%, while 21% are moderately literate. A third of the people in India are financially illiterate, and only 4.2% have advanced financial literacy. The government and the people need to take action against this fragmented approach towards financial literacy.</p>
+                <p>In your life, you will use a bank account, buy insurance, and use stock services to manage your money. This approach needs to be expanded and applied along with savings and budgeting. The widespread impact will help divert your efforts toward useful components and causes. Some incentives can be given to already present schemes like mutual funds, such as financial literacy programs for the people.</p>
+            </div>
+            <div class="video-container-wrapper">
+                <div class="video-container">
+                    <iframe src="https://drive.google.com/file/d/1A8VQCC_AYzc0Ls4JIaJfkIvKEx78M9Bw/preview" width="100%" height="1000" allow="autoplay"></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://drive.google.com/file/d/1Z_eTzuJjLuUK2uNaac_LFJlhtBFHSv17/preview" width="100%" height="450" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var dropdown = document.getElementById('menu-dropdown');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

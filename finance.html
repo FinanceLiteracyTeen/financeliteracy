@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="figma.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeFinance - Finance</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #FF8C00;
+            color: white;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        .header .menu {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            position: relative;
+        }
+        .header .menu img {
+            height: 40px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            height: calc(100vh - 60px);
+        }
+        .text {
+            font-size: 48px;
+            text-align: left;
+            flex: 1;
+            margin-right: 20px;
+            margin-left: 60px;
+        }
+        .media-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            flex: 1;
+        }
+        .image-container {
+            align-self: flex-start;
+            border: 2px solid rgb(255, 255, 255);
+            padding: 10px;
+            margin-top: 915px;
+        }
+        .finance-info {
+            width: 310%;
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 80px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .menu-dropdown {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.441);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .menu-dropdown a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .menu-dropdown img {
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px; /* Adjusted the max width */
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px; /* Added space between sections */
+            margin-right: 40px;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 450px; /* Adjusted the height */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-section">
+            <img src="WeFinance logo.png" alt="WeFinance Logo">
+            <div class="logo">WeFinance</div>
+        </div>
+        <div class="menu">
+            <a href="index.html"><img src="Home icon.png" alt="Home"></a>
+            <img src="Menu icon.png" alt="Menu" id="menu-icon">
+            <img src="Finance logo.png" alt="Finance logo" width="50">
+            <div class="menu-dropdown" id="menu-dropdown">
+                <a href="budgeting.html"><img src="Budgeting icon.png" alt="Budgeting">Budgeting</a>
+                <a href="savings.html"><img src="Savings icon.png" alt="Finance">Savings</a>
+                <a href="feedback.html"><img src="Feedback icon.png" alt="Feedback">Feedback</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="image-container">
+            <img src="Image 1.png" alt="Image1" width="450" height="450">
+        </div>
+        <div class="text">Finance</div>
+        <div class="media-section">
+            <div class="finance-info">
+                <h2>Financial Information</h2>
+                <p>Here you can find various financial information, tips, and resources to help you manage your finances effectively.</p>
+                <h3>FOMO (Fear Of Missing Out)</h3>
+                <p>FOMO or Fear Of Missing Out is common in the world of Financial Literacy. It is used to describe teenagers who drive themselves into debt while trying to keep up with their friends. The pressure to make a purchase after constant exposure to others having lavish items and luxuries. Due to this, around 40% of teenagers drive themselves into FOMO and the rest into DOOM spending. This makes them very anxious and pressurized because of their peers making them feel left out from the latest trend “Fashion shopping”.</p>
+                <p>Social Media today has advanced algorithms which are linked with AI to make consumers constantly exposed to content which will make them feel missed out. With the rise of premium products such as sneakers, bags and watches. Teenagers will try to cope up the trend gap, with their expensive purchases on their cards.</p>
+                <p>Credit cards are one specific type of card which racks up the major debt. FOMO makes the teenagers wanting to spend more, which affects the credit card bills and makes them spend due to their splurging on clothes and shoes. Especially, credit cards have bills which are based on a current deposit account which uses a overdraft facility allowing the teenagers to spend more than what the parents need. The only advantage of using credit cards, is the deposition of points.</p>
+                <p>Teens gain the idea of overspending through social media because of their friends. FOMO uses Social Media as the main influencer to give teenagers the idea of being cool or perfect. This overadiction towards social media makes teens very easy to gratify and influence.</p>
+                <p>FOMO can be handled through relationships with the people you relate with, savour the moments which you have, practicing mindfulness and learning how to be Financially literate overall.</p>
+                <h3>DOOM Spending</h3>
+                <p>The next topic that needs to be discussed is DOOM spending. DOOM spending is also a negative key concept behind the teenager overspending. DOOM spending is also a negative factor which gives the urge for teens to overspend on their money. It forces them to buy new products which are not needed for their household and leads to debt and loan borrowing from the bank. DOOM spending mainly affects teenagers who find happiness in overspending to soothe the pain of debt and social circle pressure. Their friends tend to force them to purchase expensive products which makes them weak in terms of money handling. The teens cannot hold onto their money properly which leads them to overspend and DOOM spending is the cause for it. To combat DOOM spending, teenagers need to force themselves away from the cycle by breaking it. They should realize the amount of debt being held up in their family and how it negatively impacts their lifestyle.</p>
+                <h3>Video 1:</h3>
+                <p>This video is a simple interview which I had taken about Financial Literacy to teenagers in my apartment.</p>
+                <p>They have conveyed their thoughts in the below video with clear and creative explanations.</p>
+                <P>Please share your thoughts on the interview and website on the feedback form page.</P>
+                <p>The video is a very short explanation and continuation to the finance literacy questioning of teens. Now go ahead and watch the video.</p>
+            </div>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1VAFBN6hNYX1TzYxWIjDZn3lgQd4DgZdx/preview" width="100%" height="450" allow="autoplay"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var dropdown = document.getElementById('menu-dropdown');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
