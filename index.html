@@ -41,33 +41,30 @@
         }
         .content {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             padding: 20px;
             height: calc(100vh - 60px);
         }
         .text {
             font-size: 48px;
-            text-align: left;
-            flex: 1;
-            margin-right: 20px;
-            margin-left: 60px;
+            text-align: center; /* Center the title text */
+            margin-bottom: 10px; /* Reduce the gap */
         }
         .media-section {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            flex: 1;
+            align-items: center;
+            width: 100%;
         }
         .finance-info {
             width: 100%;
             max-width: 800px;
             border: 2px solid white;
             padding: 20px;
-            margin-top: 80px;
+            margin-top: 40px; /* Reduce the gap */
             background-color: rgba(0, 0, 0, 0.5);
             margin-bottom: 30px;
-            margin-right: 8000px;
         }
         .menu-dropdown {
             display: none;
@@ -90,17 +87,11 @@
             vertical-align: middle;
             margin-right: 10px;
         }
-        /* Add these styles to align the videos side by side */
-        .video-container-wrapper {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
         .video-container {
-            width: 48%;
+            width: 100%;
+            max-width: 800px;
             border: 2px solid white;
             display: flex;
-            align-items: center;
             justify-content: center;
             margin-top: 20px;
         }
@@ -161,13 +152,11 @@
                 <p>Most people in India possess an elementary level of financial literacy at around 43%, while 21% are moderately literate. A third of the people in India are financially illiterate, and only 4.2% have advanced financial literacy. The government and the people need to take action against this fragmented approach towards financial literacy.</p>
                 <p>In your life, you will use a bank account, buy insurance, and use stock services to manage your money. This approach needs to be expanded and applied along with savings and budgeting. The widespread impact will help divert your efforts toward useful components and causes. Some incentives can be given to already present schemes like mutual funds, such as financial literacy programs for the people.</p>
             </div>
-            <div class="video-container-wrapper">
-                <div class="video-container">
-                    <iframe src="https://drive.google.com/file/d/1HAtj9IlxR6FR3BCVnXHT57i-aaRfkLzw/preview" width="100%" height="1000" allow="autoplay"></iframe>
-                </div>
-                <div class="video-container">
-                    <iframe src="https://drive.google.com/file/d/1MxJE0IFXlsSOMZMAL7UWe44sLbVX8IMY/preview" width="100%" height="450" allow="autoplay"></iframe>
-                </div>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1HAtj9IlxR6FR3BCVnXHT57i-aaRfkLzw/preview" width="100%" height="500px" allow="autoplay"></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1MxJE0IFXlsSOMZMAL7UWe44sLbVX8IMY/preview" width="100%" height="500px" allow="autoplay"></iframe>
             </div>
         </div>
     </div>
