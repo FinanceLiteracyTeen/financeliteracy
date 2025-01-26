@@ -11,11 +11,12 @@
             font-family: Arial, sans-serif;
             background: purple;
             color: white;
+            text-align: center; /* Center text alignment for all elements */
         }
         .header {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center; /* Center the header content */
             padding: 10px 20px;
             background-color: rgba(0, 0, 0, 0.5);
         }
@@ -41,30 +42,29 @@
         }
         .content {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center; /* Center the content horizontally */
             padding: 20px;
             height: calc(100vh - 60px);
         }
         .text {
             font-size: 48px;
-            text-align: left;
-            flex: 1;
-            margin-right: 20px;
-            margin-left: 60px;
+            text-align: center; /* Center the text content */
+            margin-bottom: 20px;
         }
         .media-section {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
-            flex: 1;
+            align-items: center; /* Center the media section content */
+            width: 100%;
         }
         .finance-info {
-            width: 200%;
+            width: 80%;
             border: 2px solid white;
             padding: 20px;
-            margin-top: 80px;
+            margin-top: 20px;
             background-color: rgba(0, 0, 0, 0.5);
+            text-align: left;
         }
         .menu-dropdown {
             display: none;
@@ -95,7 +95,6 @@
             align-items: center;
             justify-content: center;
             margin-top: 20px;
-            margin-right: 40px;
         }
         .video-container iframe {
             width: 100%;
@@ -105,6 +104,12 @@
         .wrap-text {
             white-space: normal;
             word-break: break-all;
+        }
+        /* Adjust iframe alignment */
+        .media-section iframe {
+            align-self: center; /* Center the iframe */
+            width: 80%; /* Adjust width as needed */
+            height: 1000px; /* Adjust height as needed */
         }
     </style>
 </head>
@@ -139,7 +144,7 @@
                 <h3>Form:</h3>
                 <p>Fill out the form please and thank you for joining! Made by Itikaas Ranjith.</p>
             </div>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdX7y_LRcYtly3Onv-BdIfSJDfE4eoIiPZoHHG7jTmj1TlpDw/viewform?embedded=true" width="640" height="1823" frameborder="0" marginheight="0" marginwidth="0">Form</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdX7y_LRcYtly3Onv-BdIfSJDfE4eoIiPZoHHG7jTmj1TlpDw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe>
         </div>
     </div>
     <script>
