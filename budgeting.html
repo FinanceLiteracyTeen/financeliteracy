@@ -41,39 +41,33 @@
         }
         .content {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             padding: 20px;
             height: calc(100vh - 60px);
         }
         .text {
             font-size: 48px;
-            text-align: left;
-            flex: 1;
-            margin-right: 20px;
-            margin-left: 60px;
+            text-align: left; /* Adjusted to align to the left */
+            margin-top: 20px;
+            margin-left: 20px; /* Pushed slightly to the left */
         }
         iframe {
             width: 850px;
             height: 550px;
             border: 2px solid #000;
+            margin-top: 20px;
         }
         .media-section {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
-            flex: 1;
-        }
-        .image-container {
-            align-self: flex-start;
-            border: 2px solid rgb(255, 255, 255);
-            padding: 10px;
-            margin-top: 65px;
+            align-items: center;
+            width: 100%;
         }
         .budget-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .budget-table th, .budget-table td {
             border: 1px solid white;
@@ -130,8 +124,6 @@
         </div>
     </div>
     <div class="content">
-        
-        <iframe src="https://docs.google.com/spreadsheets/d/1jSlkfLj1k_eZltR2Z7BtwBUBbhVo5Mo4JhBmbkStack/edit?usp=sharing" title="Budgeting sheet" width="850" height="550"></iframe>
         <div class="text">Budgeting</div>
         <div class="media-section">
             <table class="budget-table">
@@ -170,8 +162,10 @@
                     </tr>
                 </tbody>
             </table>
-            <iframe src="https://docs.google.com/spreadsheets/d/1K0usKcGqfAvVD-GuCI5o9tvmbiqaDvpS20qbuj9xHsw/edit?usp=sharing" title="Budgeting sheet"></iframe>
-            <a href="https://docs.google.com/spreadsheets/d/1K0usKcGqfAvVD-GuCI5o9tvmbiqaDvpS20qbuj9xHsw/edit?usp=sharing" class="spreadsheet-link" target="_blank">View Google Spreadsheet</a>
+            <iframe src="https://docs.google.com/spreadsheets/d/1jSlkfLj1k_eZltR2Z7BtwBUBbhVo5Mo4JhBmbkStack/edit?usp=sharing" title="Budgeting sheet" width="850" height="550"></iframe>
+            <iframe src="https://docs.google.com/spreadsheets/d/1K0usKcGqfAvVD-GuCI5o9tvmbiqaDvpS20qbuj9xHsw/edit?usp=sharing" title="Budgeting sheets pp" width="1000" height="550"></iframe>
+            <a href="https://docs.google.com/spreadsheets/d/1jSlkfLj1k_eZltR2Z7BtwBUBbhVo5Mo4JhBmbkStack/edit?usp=sharing" class="spreadsheet-link" target="_blank">View your budgeting google sheet</a>
+            <a href="https://docs.google.com/spreadsheets/d/1K0usKcGqfAvVD-GuCI5o9tvmbiqaDvpS20qbuj9xHsw/edit?usp=sharing" class="spreadsheet-link" target="_blank">View your budgeting plan sheet</a>
         </div>
     </div>
     <script>
